@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CashMap</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <h1>💰 CashMap</h1>
+        <p>Your personal money map dashboard.</p>
+      </header>
+
+      <nav class="tab-nav" id="tabNav">
+        <button class="tab-btn active" data-tab="overview">📊 Overview</button>
+        <button class="tab-btn" data-tab="income">💼 Income Streams</button>
+        <button class="tab-btn" data-tab="paycheck">💵 Paycheck Breakdown</button>
+        <button class="tab-btn" data-tab="goals">🎯 Goals</button>
+        <button class="tab-btn" data-tab="cashflow">📈 Cash Flow Map</button>
+      </nav>
+
+      <main>
+        <section class="tab-panel active" id="overview"></section>
+        <section class="tab-panel" id="income"></section>
+        <section class="tab-panel" id="paycheck"></section>
+        <section class="tab-panel" id="goals"></section>
+        <section class="tab-panel" id="cashflow"></section>
+      </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
