@@ -9,7 +9,7 @@ const statesByTier = {
 const defaultState = {
   activeTab: 'overview',
   incomeStreams: [{ id: crypto.randomUUID(), name: 'Main Job', type: 'hourly', rate: 30, units: 40 }],
-  tax: { state: 'TX', under18: false, healthWeekly: 0, retirementPercent: 0, miscWeekly: 0 },
+  tax: { state: 'SC', under18: false, healthWeekly: 0, retirementPercent: 0, miscWeekly: 0 },
   savingsRate: 20,
   goal: { name: 'Emergency Fund', amount: 3000 }
 };
