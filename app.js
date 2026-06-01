@@ -15,7 +15,7 @@ const recommendedDeductions = [
 const defaultState = {
   activeTab: 'overview',
   incomeStreams: [{ id: crypto.randomUUID(), name: 'Main Job', type: 'hourly', rate: 30, units: 40 }],
-  tax: { state: 'TX', under18: false, deductions: recommendedDeductions.map((d) => ({ id: crypto.randomUUID(), ...d })) },
+  tax: { state: 'SC', under18: false, healthWeekly: 0, retirementPercent: 0, miscWeekly: 0 },
   savingsRate: 20,
   goals: [{ id: crypto.randomUUID(), name: 'Emergency Fund', amount: 3000, current: 0 }],
   chartWeeks: 26
