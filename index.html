@@ -13,20 +13,20 @@
         <p>Your personal money map dashboard.</p>
       </header>
 
-      <nav class="tab-nav" id="tabNav">
-        <button class="tab-btn active" data-tab="overview">📊 Overview</button>
-        <button class="tab-btn" data-tab="income">💼 Income Streams</button>
-        <button class="tab-btn" data-tab="paycheck">💵 Paycheck Breakdown</button>
-        <button class="tab-btn" data-tab="goals">🎯 Goals</button>
-        <button class="tab-btn" data-tab="cashflow">📈 Cash Flow Map</button>
+      <nav class="tab-nav" id="tabNav" role="tablist" aria-label="CashMap sections">
+        <button type="button" class="tab-btn active" data-tab="overview" role="tab" aria-selected="true" aria-controls="overview" id="tab-overview">📊 Overview</button>
+        <button type="button" class="tab-btn" data-tab="income" role="tab" aria-selected="false" aria-controls="income" id="tab-income">💼 Income Streams</button>
+        <button type="button" class="tab-btn" data-tab="paycheck" role="tab" aria-selected="false" aria-controls="paycheck" id="tab-paycheck">💵 Paycheck Breakdown</button>
+        <button type="button" class="tab-btn" data-tab="goals" role="tab" aria-selected="false" aria-controls="goals" id="tab-goals">🎯 Goals</button>
+        <button type="button" class="tab-btn" data-tab="cashflow" role="tab" aria-selected="false" aria-controls="cashflow" id="tab-cashflow">📈 Cash Flow Map</button>
       </nav>
 
       <main>
-        <section class="tab-panel active" id="overview"></section>
-        <section class="tab-panel" id="income"></section>
-        <section class="tab-panel" id="paycheck"></section>
-        <section class="tab-panel" id="goals"></section>
-        <section class="tab-panel" id="cashflow"></section>
+        <section class="tab-panel active" id="overview" role="tabpanel" aria-labelledby="tab-overview" ></section>
+        <section class="tab-panel" id="income" role="tabpanel" aria-labelledby="tab-income" hidden></section>
+        <section class="tab-panel" id="paycheck" role="tabpanel" aria-labelledby="tab-paycheck" hidden></section>
+        <section class="tab-panel" id="goals" role="tabpanel" aria-labelledby="tab-goals" hidden></section>
+        <section class="tab-panel" id="cashflow" role="tabpanel" aria-labelledby="tab-cashflow" hidden></section>
       </main>
     </div>
 
